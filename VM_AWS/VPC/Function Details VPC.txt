@@ -1,0 +1,30 @@
+### List of funtions for VPCv4 ###
+
+
+1. `get_vpcs()` function:
+   - Input: None
+   - Output: Prints the existing VPC information (VPC ID, CIDR Block, Name)
+   - Details: This function retrieves a list of VPCs using the `describe_vpcs()` method from the EC2 client. 
+              It then iterates through each VPC and prints its ID, CIDR Block, and Name if available.
+
+2. `delete_vpc(vpc_id)` function:
+   - Input: VPC ID to delete
+   - Output: Prints the status of VPC deletion (Success or Failure)
+   - Details: This function attempts to delete the specified VPC using the `delete_vpc()` method from the EC2 
+              client. It catches any exceptions that may occur during the deletion process and prints the 
+              corresponding error message.
+
+3. `main()` function:
+   - Input: User choice (1-3)
+   - Output: None
+   - Details: This function is the main entry point of the script. It presents a menu to the user with three 
+              options: "Get existing VPCs," "Delete a VPC," and "Exit." Based on the user's choice, it calls 
+              the corresponding function (`get_vpcs()` or `delete_vpc(vpc_id)`) or breaks out of the loop to 
+              exit the script. It also handles invalid user input by displaying an appropriate message.
+
+4. Print the VPC ID and Subnet ID from the first script:
+   - Input: VPC ID and Subnet ID obtained from the first script (not shown in the provided code)
+   - Output: Prints the VPC ID and Subnet ID
+   - Details: This code snippet is placed outside any function and simply prints the VPC ID and Subnet ID 
+              obtained from the first script. However, the actual values for `vpc_id` and `subnet_id` are 
+              not present in the provided code.

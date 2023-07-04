@@ -1,20 +1,17 @@
 import boto3
 
-# AWS region
-AWS_REGION = "us-west-2"
+# Read the variables from info.dat
+with open("info.dat", "r") as file:
+    info = file.read()
+    exec(info)
 
 # Create function
 def create_vpc():
-    # Read the variables from info.dat
-    with open("info.dat", "r") as file:
-        info = file.read()
-        exec(info)
-
     # Create session
     session = boto3.Session(
         aws_access_key_id=AWS_ACCESS_KEY_ID,
         aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
-        region_name=AWS_REGION
+        region_name=REGION
     )
     ec2_client = session.client('ec2')
 
@@ -28,10 +25,13 @@ def create_vpc():
     # Create the subnet within the VPC
     response = ec2_client.create_subnet(VpcId=vpc_id, CidrBlock=SUBNET_CIDR, AvailabilityZone=AVAILABILITY_ZONE)
     subnet_id = response['Subnet']['SubnetId']
+    return (vpc_id,subnet_id)
+
+if __name__ == "__main__":
+    (vpc_id,subnet_id) = create_vpc()
 
     print("VPC created successfully:")
     print("VPC ID:", vpc_id)
     print("Subnet ID:", subnet_id)
 
-if __name__ == "__main__":
-    create_vpc()
+
