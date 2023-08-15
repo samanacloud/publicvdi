@@ -1,0 +1,25 @@
+# Description: This file contains generic information required to launch EC2 instances from a specific AMI.
+# Before using this with the scripts, replace the placeholders with the actual details of your resources.
+
+# ID of the AMI you want to launch instances from
+AMI_ID='YOUR_AMI_ID_HERE'
+
+# Type of the EC2 instance
+INSTANCE_TYPE='YOUR_INSTANCE_TYPE_HERE'
+
+# Name of the key pair to use for the instance
+KEY_PAIR_NAME='YOUR_KEY_PAIR_NAME_HERE'
+
+# ID of the security group to associate with the instances
+SECURITY_GROUP_ID='YOUR_SECURITY_GROUP_ID_HERE'
+
+# ID of the subnet in which you want to launch the instances
+SUBNET_ID='YOUR_SUBNET_ID_HERE'
+
+# Number of instances you want to launch
+INSTANCE_COUNT=YOUR_INSTANCE_COUNT_HERE
+
+# Prefix for the name of the instances (e.g., "MyInstance-")
+INSTANCE_NAME_PREFIX='YOUR_INSTANCE_NAME_PREFIX_HERE'
+
+# Replace all the placeholders with your specific resource details before using them in the scripts.

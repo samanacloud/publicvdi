@@ -1,0 +1,19 @@
+# Description: This file contains generic AWS resource IDs that you might want to delete.
+# Before using this with the scripts, replace the placeholders with the actual IDs of the AWS resources you want to delete.
+
+# EC2 Instance ID
+INSTANCE_ID='YOUR_INSTANCE_ID_HERE'
+
+# Security Group ID
+SECURITY_GROUP_ID='YOUR_SECURITY_GROUP_ID_HERE'
+
+# Subnet ID
+SUBNET_ID='YOUR_SUBNET_ID_HERE'
+
+# VPC ID
+VPC_ID='YOUR_VPC_ID_HERE'
+
+# EBS Volume ID
+VOLUME_ID='YOUR_VOLUME_ID_HERE'
+
+# Replace all the placeholders with your actual resource IDs before using them in the scripts.
