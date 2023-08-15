@@ -1,0 +1,13 @@
+# Description: This file contains generic information for creating an Amazon Machine Image (AMI).
+# Before using this with the scripts, replace the placeholders with your desired AMI details.
+
+# Name for the new AMI
+AMI_NAME='YOUR_AMI_NAME_HERE'
+
+# Description for the new AMI
+AMI_DESCRIPTION='YOUR_AMI_DESCRIPTION_HERE'
+
+# Display name for the AMI in the AWS Console
+AMI_DISPLAY_NAME='YOUR_AMI_DISPLAY_NAME_HERE'
+
+# Replace all the placeholders with your desired AMI details before using them in the scripts.

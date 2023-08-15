@@ -1,0 +1,42 @@
+# Description: This file contains generic AWS configurations.
+# Before using this with the scripts, replace the placeholders with your actual AWS details.
+
+# AWS Credentials
+AWS_ACCESS_KEY_ID='YOUR_AWS_ACCESS_KEY_ID_HERE'
+AWS_SECRET_ACCESS_KEY='YOUR_AWS_SECRET_ACCESS_KEY_HERE'
+
+# VPC Configuration
+CIDR_BLOCK = "YOUR_VPC_CIDR_BLOCK_HERE"
+VPC_NAME = "YOUR_VPC_NAME_HERE"
+EXISTING_VPC_ID = 'YOUR_EXISTING_VPC_ID_HERE'
+
+# Subnet Configuration
+EXISTING_SUBNET_ID = 'YOUR_EXISTING_SUBNET_ID_HERE'
+SUBNET_CIDR = "YOUR_SUBNET_CIDR_HERE"
+AVAILABILITY_ZONE = "YOUR_AVAILABILITY_ZONE_HERE"
+
+# Internet Gateway
+INTERNET_GATEWAY_ID = 'YOUR_INTERNET_GATEWAY_ID_HERE'
+
+# Tags and Region
+TAG_NAME = "YOUR_TAG_NAME_HERE"
+REGION = "YOUR_REGION_HERE"
+
+# AMI and Instance Configuration
+AMI_ID = "YOUR_AMI_ID_HERE"
+INSTANCE_TYPE = "YOUR_INSTANCE_TYPE_HERE"
+INSTANCE_NAME = "YOUR_INSTANCE_NAME_HERE"
+
+# Security Group Configuration
+SECURITY_GROUP_NAME = "YOUR_SECURITY_GROUP_NAME_HERE"
+MY_IP_ADDRESS = "YOUR_IP_ADDRESS_HERE"
+
+# EBS Volume Configuration
+EBS_VOLUME_SIZE = YOUR_EBS_VOLUME_SIZE_HERE
+EBS_VOLUME_TYPE = "YOUR_EBS_VOLUME_TYPE_HERE"
+EBS_VOLUME_NAME = "YOUR_EBS_VOLUME_NAME_HERE"
+
+# Key Pair Configuration
+KEY_PAIR_NAME = "YOUR_KEY_PAIR_NAME_HERE"
+
+# Replace all the placeholders with your actual values before using them in the scripts.

@@ -1,0 +1,22 @@
+# Description: This file contains generic information about an EC2 instance and related resources.
+# Before using this with the scripts, replace the placeholders with the actual details of your resources.
+
+# ID of the EC2 instance
+INSTANCE_ID='YOUR_INSTANCE_ID_HERE'
+
+# ID of the VPC
+VPC_ID='YOUR_VPC_ID_HERE'
+
+# ID of the subnet
+SUBNET_ID='YOUR_SUBNET_ID_HERE'
+
+# ID of the security group
+SECURITY_GROUP_ID='YOUR_SECURITY_GROUP_ID_HERE'
+
+# ID of the EBS volume
+VOLUME_ID='YOUR_VOLUME_ID_HERE'
+
+# Public IP of the EC2 instance
+PUBLIC_IP='YOUR_PUBLIC_IP_HERE'
+
+# Replace all the placeholders with your specific resource details before using them in the scripts.
